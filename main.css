@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Permanent Marker';
+  font-weight: 400;
+  src: local('Permanent Marker'),
+    url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+}
+
+@font-face {
+  font-family: 'Bahiana';
+  font-weight: 400;
+  src: local('Bahiana'), url('https://fonts.googleapis.com/css?family=Bahiana');
+}
+
+* {
+  font-family: 'Bahiana';
+  color: rgb(80, 80, 80);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-weight: 300;
+}
+
+.topWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 15% 0 15%;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: 'Permanent Marker';
+  font-weight: 300;
+  font-size: 7rem;
+  margin: 5rem 0;
+  color: rgb(40, 40, 40);
+  /*color: rgb(204, 0, 2);*/
+}
+
+h2 {
+  margin-left: 2rem;
+}
+
+.subTitle {
+  margin: 0;
+}
+
+.songTitle {
+  font-weight: 300;
+}
+
+.userName {
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+audio {
+  margin: 10% auto 0 auto;
+  width: 80%;
+}
+
+.break {
+  width: 80%;
+}
+
+.searchBar {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  margin: 2% 0 2% 0;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.searchWrapper {
+  width: 75%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin: 2% auto 2% auto;
+}
+
+.searchWrapper input {
+  flex: 4;
+  margin-right: 2%;
+  height: 2rem;
+}
+
+.searchWrapper .searchBtn {
+  flex: 1;
+  border-radius: 0px;
+  border: .1rem none rgb(50, 50, 50);
+  background: none;
+  margin-top: 1.8%;
+}
+
+.searchBtn {
+  font-size: 1.5rem;
+  transition: background .5s ease;
+}
+
+.searchBtn:focus {
+  outline: none;
+}
+
+.searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin: 5% 1% 10% 1%;
+}
+
+.trackWrapper {
+  width: 22%;
+  margin: 0 1.5% 3% 1.5%;
+}
+
+.userImg {
+  width: 100%;
+  border-radius: 15rem;
+}
+
+.userImg:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-filter: blur(2px);
+  filter: blur(1px);
+}
+
+.searchResultsSection {
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+#insta {
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .trackWrapper {
+    width: 30.333%;
+  }
+  .searchResultsSection {
+    width: 95%;
+    margin-left: .5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .trackWrapper {
+    width: 100%;
+  }
+
+  .searchWrapper {
+    flex-direction: column;
+  }
+
+  .searchBar {
+    text-align: center;
+  }
+
+  .searchBar::-webkit-input-placeholder {
+    text-align: center;
+  }
+}
