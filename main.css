@@ -13,7 +13,8 @@
 
 * {
   font-family: 'Bahiana';
-  color: rgb(80, 80, 80);
+  color: #ffffff;
+  background-color: rgb(13, 0, 55);
 }
 
 body {
@@ -94,6 +95,10 @@ audio {
   flex: 4;
   margin-right: 2%;
   height: 2rem;
+}
+
+#searchArtist::-webkit-input-placeholder {
+  color: rgb(218, 70, 110);
 }
 
 .searchWrapper .searchBtn {
