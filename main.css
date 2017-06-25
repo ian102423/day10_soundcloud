@@ -35,7 +35,7 @@ body {
 h1 {
   font-family: 'Permanent Marker';
   font-weight: 300;
-  font-size: 7rem;
+  font-size: 8rem;
   margin: 5rem 0;
   /*color: rgb(40, 40, 40);*/
   color: rgb(190, 0, 35);
@@ -50,12 +50,13 @@ h2 {
 }
 
 .songTitle {
+  font-size: 1.7rem;
   font-weight: 300;
 }
 
 .userName {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 2px;
 }
 
@@ -98,7 +99,11 @@ audio {
 }
 
 #searchArtist::-webkit-input-placeholder {
-  color: rgb(218, 70, 110);
+  color: rgb(253, 0, 168);
+}
+
+#searchArtist:focus {
+  color: rgb(0, 179, 206);
 }
 
 .searchWrapper .searchBtn {
@@ -127,9 +132,15 @@ audio {
   margin: 5% 1% 10% 1%;
 }
 
+.resultsTitle {
+  margin-top: 7rem;
+  margin-left: 7rem;
+  margin-bottom: 3rem;
+}
+
 .trackWrapper {
   width: 22%;
-  margin: 0 1.5% 3% 1.5%;
+  margin: 0 1.5% 5% 1.5%;
 }
 
 .userImg {
@@ -158,8 +169,14 @@ audio {
 }
 
 @media (max-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
   .trackWrapper {
-    width: 30.333%;
+    width: 43%;
+  }
+  .searchResults {
+    margin: auto auto;
   }
   .searchResultsSection {
     width: 95%;
@@ -172,12 +189,12 @@ audio {
     min-width: 280px;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: rgb(204, 0, 35);
     margin-bottom: 0;
   }
   .trackWrapper {
-    width: 100%;
+    width: 75%;
   }
 
   .searchWrapper {
@@ -190,5 +207,8 @@ audio {
 
   .searchBar::-webkit-input-placeholder {
     text-align: center;
+  }
+  .resultsTitle {
+    margin-left: 12%;
   }
 }
