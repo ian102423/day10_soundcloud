@@ -49,7 +49,7 @@ function createTracks(data) {
     createTrackWrapper.appendChild(createArtistImage);
     if (!data.artwork_url) {
       createArtistImage.src =
-        "http://www.i-dedicate.com/media/profile_images/default.png";
+        "http://waterfrontpropertiesofmaine.com/wp-content/themes/wfpm/images/user-icon.png";
     } else {
       createArtistImage.src = data.artwork_url;
     }
