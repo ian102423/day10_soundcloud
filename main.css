@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Bangers';
+  font-weight: 400;
+  src: local('Bangers'), url('https://fonts.googleapis.com/css?family=Bangers');
+}
+
+@font-face {
   font-family: 'Permanent Marker';
   font-weight: 400;
   src: local('Permanent Marker'),
@@ -23,6 +29,22 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-family: 'Permanent Marker';
+  font-weight: 300;
+  font-size: 8rem;
+  margin: 5rem 0;
+  color: rgb(190, 0, 35);
+}
+
+h2 {
+  margin-left: 2rem;
+}
+
+audio {
+  margin: 10% auto 0 auto;
+  width: 80%;
+}
 .topWrapper {
   display: flex;
   flex-direction: column;
@@ -30,19 +52,6 @@ body {
   text-align: center;
   margin: 0 15% 0 15%;
   margin-bottom: 3rem;
-}
-
-h1 {
-  font-family: 'Permanent Marker';
-  font-weight: 300;
-  font-size: 8rem;
-  margin: 5rem 0;
-  /*color: rgb(40, 40, 40);*/
-  color: rgb(190, 0, 35);
-}
-
-h2 {
-  margin-left: 2rem;
 }
 
 .subTitle {
@@ -54,15 +63,14 @@ h2 {
   font-weight: 300;
 }
 
+.songTitle:hover {
+  color: rgb(20, 199, 226);
+}
+
 .userName {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 2px;
-}
-
-audio {
-  margin: 10% auto 0 auto;
-  width: 80%;
 }
 
 .break {
@@ -95,15 +103,7 @@ audio {
 .searchWrapper input {
   flex: 4;
   margin-right: 2%;
-  height: 2rem;
-}
-
-#searchArtist::-webkit-input-placeholder {
-  color: rgb(253, 0, 168);
-}
-
-#searchArtist:focus {
-  color: rgb(0, 179, 206);
+  height: 2.5rem;
 }
 
 .searchWrapper .searchBtn {
@@ -121,6 +121,10 @@ audio {
 
 .searchBtn:focus {
   outline: none;
+}
+
+.searchBtn:hover {
+  color: rgb(190, 0, 35);
 }
 
 .searchResults {
@@ -148,13 +152,6 @@ audio {
   border-radius: 15rem;
 }
 
-.userImg:hover {
-  cursor: pointer;
-  opacity: 1;
-  -webkit-filter: blur(2px);
-  filter: blur(1px);
-}
-
 .searchResultsSection {
   margin: 0 auto;
 }
@@ -163,9 +160,43 @@ audio {
   text-align: center;
 }
 
+.footer:hover {
+  color: #f0f8ff;
+}
+#artistPlaying {
+  font-size: 1.5rem;
+  color: rgb(65, 217, 222);
+}
+
+#artistPlaying:hover {
+  color: rgb(95, 247, 252);
+}
+
+#songPlayingNow {
+  font-size: 1.5rem;
+  color: rgb(253, 0, 109);
+}
+
+#songPlayingNow:hover {
+  color: rgb(253, 0, 168);
+}
+
+#searchArtist::-webkit-input-placeholder {
+  color: rgb(253, 0, 168);
+}
+
+#searchArtist:focus {
+  color: rgb(0, 179, 206);
+}
+
 #insta {
+  color: rgb(240, 248, 255);
   text-transform: none;
   text-decoration: none;
+}
+
+#insta:hover {
+  color: rgb(253, 0, 109);
 }
 
 @media (max-width: 800px) {
